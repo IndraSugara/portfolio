@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Redirecting...</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #b71c1c 0%, #8b0000 100%);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .redirect-container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="redirect-container">
+      <h2>Redirecting to Admin Login...</h2>
+      <p>Please wait while we redirect you to the admin login page.</p>
+      <p>
+        If you are not redirected automatically,
+        <a href="admin/login.php" style="color: #ffeb3b">click here</a>.
+      </p>
+    </div>
+
+    <script>
+      // Immediate redirect to admin login
+      window.location.replace("admin/login.php");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Tanjung Pinang",
+			"country": {
+				"code": "ID",
+				"name": "Indonesia"
+			},
+			"subdivision": {
+				"code": "KR",
+				"name": "Riau Islands"
+			},
+			"timezone": "Asia/Jakarta",
+			"latitude": 0.9167,
+			"longitude": 104.4583,
+			"postalCode": "29115"
+		},
+		"timestamp": 1751145241960
+	}
+}
