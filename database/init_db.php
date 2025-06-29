@@ -1,10 +1,15 @@
 <?php
 try {
-    // Buat Data Source Name (DSN) MySQL
-    $dsn = "mysql:hostsql305.infinityfree.com;port=3306;dbname=if0_39352292_portfolio;charset=utf8mb4";
+    // Baca konfigurasi dari environment variable
+    $host = getenv('DB_HOST');
+    $port = getenv('DB_PORT');
+    $db   = getenv('DB_NAME');
+    $user = getenv('DB_USER');
+    $pass = getenv('DB_PASS');
 
-    // Inisialisasi PDO
-    $pdo = new PDO($dsn, "if0_39352292", "8TL6TwrZl7ufG", [
+    // Buat koneksi PDO
+    $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
+    $pdo = new PDO($dsn, $user, $pass, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ]);
